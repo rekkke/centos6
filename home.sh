@@ -13,6 +13,7 @@ cd Desktop
 wget https://tribot.org/bin/TRiBot_Loader.jar
 adduser rekke
 passwd rekke
+su rekke
 vncserver && vncserver -kill :1
 sed -i 's/twm/startxfce4/g' ~/.vnc/xstartup
 vncserver
