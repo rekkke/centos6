@@ -11,9 +11,9 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 rpm -i jdk-8u45-linux-x64.rpm
 cd Desktop
 wget https://tribot.org/bin/TRiBot_Loader.jar
-adduser rekke
-passwd rekke
-su rekke
+adduser user
+passwd user
+su user
 vncserver && vncserver -kill :1
 sed -i 's/twm/startxfce4/g' ~/.vnc/xstartup
 vncserver
