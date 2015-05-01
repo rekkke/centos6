@@ -1,3 +1,4 @@
+yum update
 rpm -ivh http://mirror.facebook.net/fedora/epel/6/x86_64/epel-release-6-7.noarch.rpm
 wget http://javadl.sun.com/webapps/download/AutoDL?BundleId=68233 -O java.rpm
 rpm -Uvh java.rpm
@@ -7,9 +8,7 @@ vncserver && vncserver -kill :1
 sed -i 's/twm/startxfce4/g' ~/.vnc/xstartup
 vncserver
 rm -rf *.rpm
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.rpm"
-
-rpm -i jdk-8u45-linux-x64.rpm
+yum install java
 cd Desktop
 mkdir Bots
 cd Bots
